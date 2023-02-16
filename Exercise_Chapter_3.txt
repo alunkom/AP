@@ -1,0 +1,253 @@
+#---------------------------------------------------------------------------------------------------------------------------
+                              
+                              
+                                HW - 1 / Mahdi Ojaghloo 
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+
+    1. Is the literal 4 a valid Python expression?              NO
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    2. Is the variable x a valid Python expression?             YES
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    3. Is x + 4 a valid Python expression?                      IT DEPENDS ON X(IF X Was Declared ---> YES ; ELSE ---> NO)
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    4. What affect does the unary + operator have when applied to a numeric expression?     SUM 
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    5. Sort the following binary operators in order of high to low precedence: +, -, *, //, /, %, =.
+
+                answer :    =  , * , / , // , %  , + , - 
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    6. Given the following assignment:
+    
+                    x = 2
+                    
+
+        Indicate what each of the following Python statements would print.
+               
+                (a) print("x")      --->  x 
+                (b) print('x')      --->  x
+                (c) print(x)        --->  2
+                (d) print("x + 1")  --->  x + 1
+                (e) print('x' + 1)  --->  EROR : TypeError: can only concatenate str (not "int") to str
+                (f) print(x + 1)    --->  3
+
+
+#---------------------------------------------------------------------------------------------------------------------------    
+
+    7. Given the following assignments:
+            i1 = 2
+            i2 = 5
+            i3 = -3
+            d1 = 2.0
+            d2 = 5.0
+            d3 = -0.5
+                
+                Evaluate each of the following Python expressions.
+                    
+                    
+                    (a) i1 + i2             ---> 2 + 5 = 7
+                    (b) i1 / i2             ---> 2 / 5 = 0.4
+                    (c) i1 // i2            ---> 2 // 5 = 0
+                    (d) i2 / i1             ---> 5 / 2 = 2.5
+                    (e) i2 // i1            ---> 5 // 2 = 2
+                    (f) i1 * i3             ---> 2 * -3 = -6
+                    (g) d1 + d2             ---> 2.0 + 5.0 = 7.0
+                    (h) d1 / d2             ---> 2.0 / 5.0 = 0.4
+                    (i) d2 / d1             ---> 5.0 / 2.0 = 2.5
+                    (j) d3 * d1             ---> - 0.5 * 2.0 = - 1.0
+                    (k) d1 + i2             ---> 2.0 +  5 = 7.0
+                    (l) i1 / d2             ---> 2 / 5.0 = 0.4
+                    (m) d2 / i1             ---> 5.0 / 2 = 2.5
+                    (n) i2 / d1             ---> 5 / 2.0 = 2.5
+                    (o) i1/i2*d1            ---> 2 / 5 * 2.0 = 0.8
+                    (p) d1*i1/i2            ---> 2.0 * 2 / 5 = 0.8
+                    (q) d1/d2*i1            ---> 2.0 / 5.0 * 2 = 0.8
+                    (r) i1*d1/d2            ---> 2 * 2.0 / 5.0 = 0.8
+                    (s) i2/i1*d1            ---> 5 / 2 * 2.0 = 5
+                    (t) d1*i2/i1            ---> 2.0 * 5 / 2.0 = 5
+                    (u) d2/d1*i1            ---> 5.0 / 2.0 * 2 = 5
+                    (v) i1*d2/d1            ---> 2 * 5.0 / 2.0 = 5
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    8. What is printed by the following statement:
+        
+            #print(5/3)  ---> 1.6666666666666667
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+    9. Given the following assignments:
+      
+        i1 = 2
+        i2 = 5
+        i3 = -3
+        d1 = 2.0
+        d2 = 5.0
+        d3 = -0.5
+      
+        Evaluate each of the following Python expressions.
+      
+                (a) i1 + (i2 * i3)                      ---> 2 + (5 * (-3)) = 2 + (-15) = -13
+                (b) i1 * (i2 + i3)                      ---> 2 * (5 - 3) = 2 * 2 = 4
+                (c) i1 / (i2 + i3)                      ---> 2 / (5 - 3) = 2 / 2 = 1.0
+                (d) i1 // (i2 + i3)                     ---> 2 // (5 - 3) = 2 // 2 = 1
+                (e) i1 / i2 + i3                        ---> 2 / 5 + (-3) = - 2.6
+                (f) i1 // i2 + i3                       ---> 2 // 5 + (-3) = -3
+                (g) 3 + 4 + 5 / 3                       ---> 7 + 5/3 = 1.6666666666666667 + 7 = 8.6666666666666667
+                (h) 3 + 4 + 5 // 3                      ---> 7 + 1 = 8
+                (i) (3 + 4 + 5) / 3                     ---> 12 / 3 = 4.0
+                (j) (3 + 4 + 5) // 3                    ---> 12 // 3 = 4
+                (k) d1 + (d2 * d3)                      ---> 2.0 + (5.0 * (-0.5)) = - 0.5
+                (l) d1 + d2 * d3                        ---> 2.0 + 5.0 * - 0.5 = - 0.5
+                (m) d1 / d2 - d3                        ---> 2.0 / 5.0 -(-0.5) = 0.9
+                (n) d1 / (d2 - d3)                      ---> 2.0 / (5.0 - (-0.5)) = 0.36363636363636365
+                (o) d1 + d2 + d3 / 3                    ---> 2.0 + 5.0 + (-0.5) / 3 = 6.833333333333333
+                (p) (d1 + d2 + d3) / 3                  ---> (2.0 + 5.0 + (-0.5)) / 3 = 2.1666666666666665
+                (q) d1 + d2 + (d3 / 3)                  ---> 2.0 + 5.0 + ((-0.5)/3) = 6.833333333333333
+                (r) 3 * (d1 + d2) * (d1 - d3)           ---> 3 * (2.0 + 5.0) *(2.0 -(-0.5)) = 52.5
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        10. What symbol signifies the beginning of a comment in Python?  ( # ) --> Sharp
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        11. How do Python comments end?       End of line  
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        12. Which is better, too many comments or too few comments?  Few , Useless , usefull.
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        13. What is the purpose of comments?    Marking what we do in sections 
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        14. Why is human readability such an important consideration?           Becuase We need to understand code and able to manipulate that .
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        15. What circumstances can cause each of the following run-time errors to arise?
+              
+                • NameError      
+                                Explian :  The NameError occurs when you try to use a variable, function, 
+                                                or module that doesn't exist or wasn't used in a valid way.
+
+                • ValueError
+                                Explian : If Value Not Defined  
+
+                • ZeroDivisionError
+                                Explian : A ZeroDivisionError is raised when you try to divide by 0 . 
+                                                This is part of the ArithmeticError Exception class.
+
+                • IndentationError
+                                Explian :The indentation error can occur when the spaces or tabs are not placed properly.
+
+                • ArithmeticError
+                                Explian :ArithmeticError is simply an error that occurs during numeric calculations.
+                                                 ArithmeticError types in Python include: OverFlowError , ZeroDivisionError , FloatingPointError.
+
+                • OverflowError
+                                Explian :An OverflowError exception is raised when an arithmetic operation exceeds the limits to be represented. 
+
+                • SyntaxError
+                                Explian :If the interpreter detects an invalid program statement during the translation phase,
+                                                 it will terminate the program’s execution and report an error.
+
+                • TypeError     
+                                Explian :The Python TypeError is an exception that occurs when the data type of an object in an operation is inappropriate.
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        16. Consider the following program which contains some errors. You may assume that the comments
+               within the program accurately describe the program’s intended behavior.
+               
+                        # Get two numbers from the user
+                        n1 = float(input()) # 1
+                        n2 = float(input()) # 2
+                        # Compute sum of the two numbers
+                        print(n1 + n2) # 3
+                        # Compute average of the two numbers
+                        print(n1+n2/2) # 4                      ---> False ( # 1 + 2/2 = 1 + 1.0 = 2.0)
+                        # Assign some variables
+                        d1 = d2 = 0 # 5
+                        # Compute a quotient
+                        print(n1/d1) # 6
+                        # Compute a product
+                        n1*n2 = d1 # 7
+                        # Print result
+                        print(d1) # 8
+             
+                For each line listed in the comments, indicate whether or not an interpreter error, run-time exception,
+                or logic error is present. Not all lines contain an error.
+        
+ #---------------------------------------------------------------------------------------------------------------------------
+
+        17. Write the shortest way to express each of the following statements.
+
+                (a) x = x + 1           ---> x += 1
+                (b) x = x / 2           ---> x /= 2
+                (c) x = x - 1           ---> x -= 1
+                (d) x = x + y           ---> x += y
+                (e) x = x - (y + 7)     ---> x -= y +7
+                (f) x = 2*x             ---> x *= 2
+                (g) number_of_closed_cases = number_of_closed_cases + 2*ncc      --->number_of_closed_cases += 2 *ncc
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        18. What is printed by the following code fragment?
+
+                x1 = 2  
+                x2 = 2
+                x1 += 1
+                x2 -= 1
+                print(x1)               ---> 3
+                print(x2)               ---> 2
+
+                Why does the output appear as it does?    Becuase ( x1 += 1 == x1 = x1 + 1 ) AND ( x2 -= 1 == x2 = x2 -1 )    
+
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+        19. Consider the following program that attempts to compute the circumference of a circle given the
+                      radius entered by the user. Given a circle’s radius, r, the circle’s circumference, C is given by the formula:
+                
+                C = 2pr
+                r = 0
+                PI = 3.14159
+                # Formula for the area of a circle given its radius
+                C = 2*PI*r
+                # Get the radius from the user
+                r = float(input("Please enter the circle's radius: "))
+                # Print the circumference
+                print("Circumference is", C)
+                
+                (a) The program does not produce the intended result. Why?
+                
+                (b) How can it be repaired so that it works correctly?
+                
+#---------------------------------------------------------------------------------------------------------------------------
+
+                20. Write a Python program that ...
+
+#---------------------------------------------------------------------------------------------------------------------------
+
+                21. Write a Python program that ...
