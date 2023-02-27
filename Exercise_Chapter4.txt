@@ -56,21 +56,21 @@
     7. Given the following definitions:
 
             x, y = 3, 5
-            b1, b2, b3, b4 = True, False, x == 3 (True) , y < 3 (True)
+            b1, b2, b3, b4 = True, False, x == 3 (True) , y < 3 (False)
 
                     evaluate the following Boolean expressions:
 
                             (a) b3                                      ---> True
-                            (b) b4                                      ---> True
+                            (b) b4                                      ---> False
                             (c) not b1                                  ---> False
                             (d) not b2                                  ---> True
                             (e) not b3                                  ---> False
-                            (f) not b4                                  ---> False
+                            (f) not b4                                  ---> True
                             (g) b1 and b2                               ---> False
                             (h) b1 or b2                                ---> True
                             (i) b1 and b3                               ---> True
                             (j) b1 or b3                                ---> True
-                            (k) b1 and b4                               ---> True
+                            (k) b1 and b4                               ---> False
                             (l) b1 or b4                                ---> True
                             (m) b2 and b3                               ---> False
                             (n) b2 or b3                                ---> True
