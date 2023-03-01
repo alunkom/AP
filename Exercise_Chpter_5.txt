@@ -1,0 +1,584 @@
+#------------------------------------------------------------------------------------
+|                                                                                   |
+|                                                                                   |
+|                                                                                   |
+|                           HW - 3 / Mahdi_ojaghloo                                 |
+|                                                                                   |
+|                                                                                   |
+|                                                                                   |
+|                                                                                   |
+#------------------------------------------------------------------------------------
+
+
+    1. In Listing 5.4 (addnonnegatives.py) could the condition of the if statement
+          have used > instead of >= and achieved the same results? Why?   
+
+                Yes , we can use     if entry > -1 :        ; Becuase this condition check if entry equals 0 it works to.
+                                        block code
+
+#------------------------------------------------------------------------------------
+
+    2. In Listing 5.4 (addnonnegatives.py) could the condition of the while 
+        statement have used > instead of >= and achieved the same results? Why?
+
+                Yes , we can use while entry > -1   
+
+#------------------------------------------------------------------------------------
+
+
+    3. In Listing 5.4 (addnonnegatives.py) what would happen if the statement
+            entry = int(input()) # Get the value 
+            were moved out of the loop?     We input number just one time.
+            Is moving the assignment out of the loop a good or bad thing to do? It depends our alghoritms
+            Why? It depends our alghoritms
+
+
+#------------------------------------------------------------------------------------
+
+
+    4. How many asterisks does the following code fragment print?  ---> 100  / 0 - 99
+
+        a = 0
+        while a < 100:
+            print('*', end='')
+            a += 1
+        print() 
+
+
+#------------------------------------------------------------------------------------
+
+
+    5. How many asterisks does the following code fragment print?   --->   Infinit !
+        
+        a = 0
+        while a < 100:
+            print('*', end='')
+        print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    6. How many asterisks does the following code fragment print?   --->   Zero ;) / Becuase while condition is False 
+
+            a = 0
+            while a > 100:
+                print('*', end='')
+                a += 1
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    7. How many asterisks does the following code fragment print?   --->  5500
+
+            a = 0
+            while a < 100:
+                b = 0
+                while b < 55:
+                    print('*', end='')
+                    b += 1
+                print()
+                a += 1
+
+
+#------------------------------------------------------------------------------------
+
+
+    8. How many asterisks does the following code fragment print?   ---> 20
+
+            a = 0
+            while a < 100:
+                if a % 5 == 0:
+                    print('*', end='')
+                a += 1
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    9. How many asterisks does the following code fragment print?   ---> 2000
+
+            a = 0
+            while a < 100:
+                b = 0
+                while b < 40:
+                    if (a + b) % 2 == 0:
+                        print('*', end='')
+                    b += 1
+                print()
+                a += 1
+
+
+#------------------------------------------------------------------------------------
+
+
+
+    10. How many asterisks does the following code fragment print?   ---> 1000000
+
+            a = 0
+            while a < 100:
+                b = 0
+                while b < 100:
+                    c = 0
+                    while c < 100:
+                        print('*', end='')
+                            c += 1
+                    b += 1
+                a += 1
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    11. What is minimum number of arguments acceptable to the range expression?  ---> 1
+
+
+#------------------------------------------------------------------------------------
+
+
+    12. What is maximum number of arguments acceptable to the range expression?  ---> 3 / ( begin , end , step )
+
+
+#------------------------------------------------------------------------------------
+
+    13. Provide the exact sequence of integers specified by each of the following range expressions.
+
+            
+            (a) range(5)                             ---> 0 , 1 , 2 , 3, 4 
+            (b) range(5, 10)                         ---> 5 , 6 , 7 , 8 , 9
+            (c) range(5, 20, 3)                      ---> 5 , 8 , 11 , 14 , 17 
+            (d) range(20, 5, -1)                     ---> 19 , 18 , ...  , 6
+            (e) range(20, 5, -3)                     ---> 17 , 14 , ... , 8 
+            (f) range(10, 5)                         ---> 9 , 8 , 7 , 6 
+            (g) range(0)                             ---> Nothing
+            (h) range(10, 101, 10)                   ---> 20 , 30 , ... , 100
+            (i) range(10, -1, -1)                    ---> 9 , 8 , ... , 0
+            (j) range(-3, 4)                         ---> -2 , -1 , ... , 3
+            (k) range(0, 10, 1)                      ---> 1 , 2 , ... , 9
+
+
+#------------------------------------------------------------------------------------
+
+
+    14. What is a shorter way to express range(0, 5, 1)?   -->  range(0 , 5)
+
+
+#------------------------------------------------------------------------------------
+
+
+    15. Provide an equivalent Python range expression for each of the following integer sequences.
+
+                
+            (a) 1;2;3;4;5                               ---> range (1 , 6)          
+            (b) 5;4;3;2;1                               ---> range (5 , 0)
+            (c) 5;10;15;20;25;30                        ---> range (5 , 31 , 5)
+            (d) 30;25;20;15;10;5                        ---> range (30 , 4 , 5)
+            (e) -3;-2;-1;0;1;2;3                        ---> range (-3 , 4)
+            (f) 3;2;1;0;-1;-2;-3                        ---> range (3 , -4)
+            (g) -50;-40;-30;-20;-10                     ---> range (-50 , -9 , 10)
+            (h) Empty sequence                          ---> range (0)
+
+
+#------------------------------------------------------------------------------------
+
+
+    16. If x is bound to the integer value 2, what integer sequence does range(x, 10*x, x) represent? 
+
+            range ( 2 , 20 , 2)  ---> 2 , 4 , 6 , ... , 18
+
+
+#------------------------------------------------------------------------------------            
+
+
+    17. If x is bound to the integer value 2 and y is bound to the integer 5, what integer sequence does
+            range(x, x + y) represent?
+
+            range ( 2 , 7 )  ---> 2 , 3 , 4 , 5 , 6 
+
+
+#------------------------------------------------------------------------------------
+
+
+    18. Is it possible to represent the following sequence with a Python range expression: 1;-1;2;-2;3;-3;4;-4 ?
+
+        Who knows ? :)
+
+
+#------------------------------------------------------------------------------------
+
+
+    19. How many asterisks does the following code fragment print?  --->  99
+
+            for a in range(100):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------            
+
+
+    20. How many asterisks does the following code fragment print?  --->  16   /  20 , 25 , ... , 95
+
+            for a in range(20, 100, 5):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    21. How many asterisks does the following code fragment print? ---> 50  / 100 - 98 - ... - 2
+
+            for a in range(100, 0, -2):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    22. How many asterisks does the following code fragment print? ---> Empty sequence
+
+            for a in range(1, 1):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    23. How many asterisks does the following code fragment print?  ---> 200  / -100 - -99 - ... - 99
+
+            for a in range(-100, 100):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    24. How many asterisks does the following code fragment print?  ---> 20  / -100 - -90 - ... - 90 
+
+            for a in range(-100, 100, 10):
+                print('*', end='')
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    25. Rewrite the code in the previous question so it uses a while instead of a for. Your code should
+            behave identically.
+
+            counter = 0
+            number = -100
+            while number < 100 :
+                print("*",end="")
+                number += 10  
+                counter += 1
+            print("\nCounter = ",counter)    # For count number of asterisks ;)
+
+
+#------------------------------------------------------------------------------------
+
+
+    26. What does the following code fragment print?   
+
+            a = 0
+            while a < 100:
+                print(a)
+                a += 1
+            print()
+
+            output --->   0
+                          1
+                          2
+                          ...
+                          99
+
+#------------------------------------------------------------------------------------
+
+
+    27. Rewrite the code in the previous question so it uses a for instead of a while. Your code should
+            behave identically.
+
+
+            
+            for number in range (1 , 100):
+                print(number)
+
+
+#------------------------------------------------------------------------------------
+
+
+    28. What is printed by the following code fragment?     --->  Empty sequence  
+
+
+            a = 0
+            while a > 100:
+                print(a)
+                a += 1
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    29. Rewrite the following code fragment using a break statement and eliminating the done variable.
+            Your code should behave identically to this code fragment.
+
+
+                done = False
+                n, m = 0, 100
+                while not done and n != m:
+                    n = int(input())
+                    if n < 0:
+                        done = True
+                    print("n =", n)
+
+
+                 Rewrite --->
+
+                        n = 0
+                        while n >= 0 :
+                            n = int(input())
+                            if n < 0:
+                                break
+                            print("n =", n)
+
+
+#------------------------------------------------------------------------------------
+
+
+    30. Rewrite the following code fragment so it eliminates the continue statement. Your new code’s logic
+        should be simpler than the logic of this fragment.
+
+
+            x = 5
+            while x > 0:
+                y = int(input())
+                if y == 25:
+                    continue
+                x -= 1
+                print('x =', x)
+
+
+            
+            Rewrite ---> 
+
+                for loop in range (5):
+                    y = int(input())
+                    if y != 25 :
+                        print('x =', loop + 1)
+
+
+#------------------------------------------------------------------------------------
+
+
+    31. What is printed by the following code fragment?   --->  0  1  2  ...  99
+            
+            a = 0
+            while a < 100:
+                print(a, end=' ')
+                a += 1
+            print()
+
+
+#------------------------------------------------------------------------------------
+
+
+    32. Write a Python program that accepts a single integer value entered by the user. If the value entered is
+        less than one, the program prints nothing. If the user enters a positive integer, n, the program prints
+        an n * n box drawn with * characters. If the users enters 1, for example, the program prints
+
+            -   *   -
+
+            =============================
+
+
+                <!- THE CODE -!>
+
+
+            number_of_asterisks = int(float(input("How many asterisks do want to see Ma men ?  ")))
+            if number_of_asterisks >= 1 :
+                asterisks = number_of_asterisks
+                while number_of_asterisks != 0 :
+                    char = '*'* asterisks
+                    print(char)
+                    number_of_asterisks -= 1
+
+
+
+            =============================
+
+
+#------------------------------------------------------------------------------------
+
+
+    33. Write a Python program that allows the user to enter exactly twenty floating-point values. The program
+                then prints the sum, average (arithmetic mean), maximum, and minimum of the values entered.
+
+
+
+            =============================
+
+
+                <!- THE CODE -!>
+
+            
+            number_of_value = 20
+
+            print("\n\t\t\tGeektory.fun :)\n\n")
+            print("\t\tGithub : https://github.com/alunkom")
+            print("\n","----"*6 , "\n")
+            
+            adad =  float(input("Enter adad = "))
+            min , max = adad ,adad
+            sum , avrage = adad , 1
+            
+            while number_of_value != 1 :
+                value = float(input("Enter adad = "))
+                sum += value
+                avrage += 1
+                if value > max : 
+                    max = value
+                elif value < min :
+                    min = value
+                number_of_value -= 1 
+
+            print("\n","----"*6 , "\n")
+            print("Min of numbers = %f"%min)
+            print("Max of numbers = %f"%max)
+            print("Avrage if numbers = %f"%(sum/avrage))
+            print("Sum of numbers = %f"%sum)
+
+
+            =============================
+
+
+
+#------------------------------------------------------------------------------------
+
+
+    34. Write a Python program that allows the user to enter any number of nonnegative floating-point values.
+            The user terminates the input list with any negative value. The program then prints the sum, average
+            (arithmetic mean), maximum, and minimum of the values entered. The terminating negative value is
+            not used in the computations.
+
+
+            =============================
+
+
+                <!- THE CODE -!>
+
+            
+
+            print("\n\t\t\tGeektory.fun :)\n\n")
+            print("\t\tGithub : https://github.com/alunkom")
+            print("\n","----"*6 , "\n")
+
+            adad =  float(input("Enter posetive adad [negetive for end] = "))
+
+            if adad < 0 :
+                print("\n\t\t\tBye Bye ma raftim :) ") 
+            else :
+
+                min , max = adad ,adad
+                sum , avrage = adad , 1
+                condition = True
+
+                while condition :
+                    value = float(input("Enter adad = "))
+                    if value < 0 :
+                        print("\n\t\t\tBye Bye ma raftim :) ")
+                        condition = False
+                    else:    
+                        sum += value
+                        avrage += 1
+                        if value > max : 
+                            max = value
+                        elif value < min :
+                            min = value 
+
+                print("\n","----"*6 , "\n")
+                print("Min of numbers = %f"%min)
+                print("Max of numbers = %f"%max)
+                print("Avrage if numbers = %f"%(sum/avrage))
+                print("Sum of numbers = %f"%sum)
+
+
+            =============================
+
+
+#------------------------------------------------------------------------------------
+
+
+    35. Redesign Listing 5.34 (startree.py) so that it draws a sideways tree pointing right; for example, if the
+            user enters 7, the program would print
+
+
+            =============================
+
+
+                <!- THE CODE -!>
+
+
+            adad = int(input("Enter number : "))                    
+            
+            row_bala = adad - 1
+            
+            for row in range(1 , row_bala+1):
+                print("*"*row)
+            
+            print("*"*adad)
+            
+            for row_paiin in range (row_bala , 0 , -1 ):
+                print("*"*row_paiin)
+
+
+            =============================
+
+#------------------------------------------------------------------------------------
+
+
+    36. Redesign Listing 5.34 (startree.py) so that it draws a sideways tree pointing left; for example, if the
+            user enters 7, the program would print :
+
+            
+            =============================
+
+
+                <!- THE CODE -!>
+
+   
+
+            print("\n\t\t\tGeektory.fun :)\n\n")
+            print("\t\tGithub : https://github.com/alunkom")
+            print("\n","----"*6 , "\n")
+
+            # Declare variables and input section 
+
+            adad = int(input("Enter number : "))
+            row_space = adad - 1
+            number_of_asterisks = 1
+            asterisks = '*' * number_of_asterisx
+
+
+            for space__bala in range(row_space , 0 , -1):
+                print(" "*space__bala , asterisks,sep='')
+                number_of_asterisks += 1
+                asterisks = number_of_asterisks * '*' 
+            
+            print("*"*adad)
+            
+            for space_paiin in range(1 , row_space+1 ):
+                number_of_asterisks -= 1
+                asterisks = '*' * number_of_asterisks
+                print(' '*space_paiin,asterisks,sep='')
+
+
+            =============================
