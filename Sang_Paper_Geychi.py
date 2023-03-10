@@ -15,7 +15,7 @@
 Ex :
 
 Enter a choice :  s
-                                User | Coputer  Winner is Computer :)
+                                User | Computer  Winner is Computer :)
           ______________________________
 
 
