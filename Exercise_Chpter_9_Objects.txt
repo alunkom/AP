@@ -1,0 +1,345 @@
+
+
+
+
+#------------------------------------------------------------------------------------
+
+
+    1. What is the difference between a class and an object? 
+
+            A class is a blueprint for declaring and creating objects. An object is 
+                a class instance that allows programmers to use variables and methods
+                     from inside the class. Memory is not allocated to classes.
+
+
+#------------------------------------------------------------------------------------                         
+
+
+    2. What are some other names for the term instance variable?  --> fields or attributes of an object
+
+
+#------------------------------------------------------------------------------------
+
+
+    3. What is another name for the term method?  --> operations
+
+
+#------------------------------------------------------------------------------------
+
+
+    4. What symbol associates an object with a method invocation?  -->   .method name() 
+
+
+#------------------------------------------------------------------------------------
+
+
+    5. How does a method differ from a function?  
+
+            In object-oriented programming, rather than treating data as passive values and functions as active
+                agents that manipulate data, we fuse data and functions together into software units called objects.
+                    A typical object consists of two parts: data and methods. An object’s data consists of its instance
+                         variables. The term instance variable comes from the fact that the data is represented by a variable
+                            owned by an object, and an object is an instance of a class.
+
+
+#-------------------------------------------------------------------------------------
+
+
+    6. What method from the string class returns a new string with no leading or trailing whitespace? --> .strip()
+    
+
+#-------------------------------------------------------------------------------------
+
+
+    7. What function returns the length of its string argument?  --> len()
+
+#-------------------------------------------------------------------------------------
+
+
+    8. What type of object does the open function return?  --> open()
+
+
+#-------------------------------------------------------------------------------------
+
+
+    9. What does the second parameter of the open function represent?  --> mode like "awr"(append,write,read)
+
+
+#-------------------------------------------------------------------------------------
+
+
+    10. Write a program that stores the first 100 integers to a text file named numbers.txt . Each number
+            should appear on a line all by itself.
+
+
+                        <- THE CODE ->
+
+                
+                print("\t\t\t\033[07mGeekTory :)\033[1;m\n")
+                
+                # open file
+                file = open('numbers.txt','w')
+                # Generate 100 numbers and add to file
+                for num in range(0,101):
+                    file.write("%s\n"%num)    
+                # Close the file
+                file.close
+
+                print("\t[ Github | https://github.com/alunkom/ ]")
+
+
+
+#-------------------------------------------------------------------------------------
+
+
+    11. Complete the following function that reads a collection of integers from a text file named numbers.txt.
+            Each number in the file appears on a line all by itself. The function accepts a single parameter, a string
+                text file name. The function returns the sum of the integers in the file.
+
+
+
+                        <- THE CODE ->
+
+
+                def sumfile(filename):
+
+                    # Add your code here . . .
+                    file = open(filename,'r')
+                    sum = 0
+                    for line in file:
+                        sum += int(line)
+                    print("Sum = %i"%sum)
+                    file.close()
+
+                sumfile('numbers.txt')
+                
+
+#-------------------------------------------------------------------------------------
+
+
+    12. Provide the syntactic sugar for each of the following methods of the Fraction class:
+
+                (a) __sub__         --->  __sub__, subtraction: f.__sub__(g) is equivalent to f - g
+                (b) __eq__          --->  __eq__, relational quality: f.__eq__(g) is equivalent to f == g
+                (c) __neg__         --->  __neg__, unary minus: f.__neg__() is equivalent to -f
+                (d) __gt__          --->  __gt__, greater than: f.__gt__(g) is equivalent to f > g
+
+
+#-------------------------------------------------------------------------------------
+
+
+    13. How is using a Turtle object from Python’s Turtle graphics module different from using the free
+                functions; for example, t.penup() versus penup()?
+
+
+                    The t.penup() writing in turtle  library and its synchronise with that objects and fields but 
+                        when we decide to define a function we must write all t.penup() again.
+
+                    In otherwise object influence just on a field.
+
+
+#-------------------------------------------------------------------------------------
+
+
+    14. For each of the drawings below write a program that draws the shape using a Turtle object from
+            Python’s Turtle graphics module.
+
+            a) tryangle
+            
+                    <__THE CODE__>
+
+                import turtle as tr
+
+                root = tr.Turtle()
+
+                root.forward(200)
+                root.left(120)
+                root.forward(200)
+                root.left(120)
+                root.forward(200)
+
+
+
+            
+            b) Star
+
+
+                import turtle as tr
+
+                root = tr.Turtle()
+
+                root.left(72)
+                root.forward(200)
+                root.right(180-36)
+                root.forward(200)
+                root.right(144)
+                root.forward(200)
+                root.right(144)
+                root.forward(200)
+                root.right(144)
+                root.forward(200)
+
+
+            c)  Flow 
+
+                import turtle as tr
+
+                root = tr.Turtle()
+
+                root.left(75)
+                root.forward(200)
+                root.right(150)
+                root.forward(200)
+                root.left(150)
+                root.forward(200)
+                root.right(150)
+                root.forward(200)
+                root.left(150)
+                root.forward(200)
+                root.right(150)
+                root.forward(200)
+                root.left(150)
+                root.forward(200)
+                root.right(150)
+                root.forward(200)
+                root.left(150)
+                root.forward(200)
+                root.right(150)
+                root.forward(200)
+
+                d) Like Chess :
+
+                    import turtle as tr
+
+                    root = tr.Turtle()
+
+                    root.left(90) 
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(40)
+                    root.right(90)
+                    root.forward(200)
+                    root.left(90)
+                    root.forward(40)
+                    root.left(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(40)
+                    root.right(90)
+                    root.forward(200)
+                    root.left(90)
+                    root.forward(40)
+                    root.left(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(40)
+                    root.right(90)
+                    root.forward(40)
+                    root.right(90)
+                    root.forward(200)
+                    root.left(90)
+                    root.forward(40)
+                    root.left(90)
+                    root.forward(200)
+                    root.right(90)
+                    root.forward(40)
+                    root.right(90)
+                    root.forward(200)
+                    root.left(90)
+                    root.forward(40)
+                    root.left(90)
+                    root.forward(200) 
+
+                e) Circle :
+
+
+                        import turtle as tr
+
+                        root = tr.circle(100)
+
+
+                f) Spachial Shape : 
+
+                        import turtle as tr
+                    
+                        root = tr.Turtle()
+                        root.circle(100)
+                        
+                        for i in range(2):    # Draw Diametrs 
+                            root.left(90)
+                            root.forward(200)
+                            root.left(90)
+                            root.forward(100)
+                            root.left(90)
+                            root.forward(100)   
+                        root.left(90)
+
+                        for g in range(35):  # Draw The shape
+                            root.forward(100)
+                            root.left(100)
+                            root.forward(100)
+                            root.left(90)
+                            root.forward(100)
+                            root.left(90)
+                            root.forward(100)
+                            root.left(90)
+
+
+#-------------------------------------------------------------------------------------
+
+
+    15. Does Python permit a programmer to change one symbol in a string object? If so, how? --> Yes
+
+            Consider This name variable:
+
+                name = "mahdi"
+                name[0] = "M"
+
+
+#-------------------------------------------------------------------------------------
+
+
+    16. What would be the consequences if a turtle.Turtle object were immutable?
+
+        - Obviously , we can't drow 
+
+
+#-------------------------------------------------------------------------------------
+
+
+    17. In the context of programming, what is garbage?   --> None
+
+
+#-------------------------------------------------------------------------------------
+
+
+    18. What is garbage collection, and how does it work in Python? 
+
+        --> When we get None to variable , This means the object effectively is cut off from the remainder
+                of the program’s execution or the remainder of the interactive session. This abandoned object
+                    is classified as garbage. The term garbage is a technical term used in computer science that
+                        refers to memory allocated by an executing program that the program no longer can access.The
+                            Python interpreter cleans up garbage through a process called garbage collection. Python uses
+                                a reference counting garbage collector  that automatically reclaims the space occupied by abandoned
+                                    objects.
+
+
+#-------------------------------------------------------------------------------------
+
+
+    19. Consider the following code:
+
+            a = "ABC"
+            b = a
+            c = b
+            a = "XYZ"
+
+                (a) At the end of this code’s execution what is the reference count for the string object "ABC"? --> c , b
+                (b) At the end of this code’s execution is b an alias of a? --> Yes
+                (c) At the end of this code’s execution is b an alias of c? --> No , C is alias for b , maybe theris no diffrent i'm not sure :) .
