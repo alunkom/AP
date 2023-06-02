@@ -96,9 +96,9 @@ while True:
             print('\t\t\t\t\033[1;31mPaper | Geychi\t\033[1;31mWinner is Computer :)')
         
         elif user_action == 'geychi' and computer_action =='sang':
-            print('\t\t\t\t\033[1;31Geychi | Sang \t\033[1;31mWinner is Computer :)')
+            print('\t\t\t\t\033[1;31mGeychi | Sang \t\033[1;31mWinner is Computer :)')
         elif user_action == 'geychi' and computer_action =='paper':
-            print("\t\t\t\t\033[1;34Geychi | Paper\t\033[1;34mHooooooora Barandeh shodi ;)")            
+            print("\t\t\t\t\033[1;34mGeychi | Paper\t\033[1;34mHooooooora Barandeh shodi ;)")            
     
     #-----------------------------------
     
